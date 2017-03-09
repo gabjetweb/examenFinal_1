@@ -2,13 +2,25 @@
 <html>
 <head>
 	<title>Gabriel Jetté - Épreuve finale partie 1</title>
-	<style type="text/css" href="css/style.css"></style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div id="conteneur_svg">
-		<svg>
- 		 <circle cx="50" cy="50" r="40" fill="red"/>
- 		  <ellipse cx="50" cy="50" rx="60" ry="13" fill="#66ff00" />
+		<svg height="250" width="250">
+		   <defs>
+		    <linearGradient id="couleurCercle">
+        		 <stop offset="0" stop-color="red" />
+      		</linearGradient>
+      		<linearGradient id="couleurEllipse">
+      			<stop offset="0" stop-color="#66ff00" />
+      		</linearGradient>
+		   </defs>
+		   
+		    <g>
+ 		  	 <circle cx="50" cy="50" r="40" fill="url(#couleurCercle)"/>
+ 		 	 <ellipse cx="50" cy="50" rx="60" ry="13" fill="url(#couleurEllipse)"/>
+ 		  	 <ellipse cx="50" cy="50" rx="13" ry="60" fill="url(#couleurEllipse)"/>
+ 		  	</g>
 		</svg>
 	</div>
 </body>
