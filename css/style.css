@@ -19,17 +19,18 @@ svg{
 	fill:#66ff00;
 	stroke:#0a3984;
 	stroke-width:5px;
-	stroke-dasharray:250;
+	stroke-dasharray:300;
 	transform-origin:center;
 }
 
 @keyframes rotation {
   from {
     transform: rotate(0deg);
+    stroke-dashoffset:300;
   }
   to {
     transform: rotate(360deg);
-    stroke-dashoffset:250;
+    stroke-dashoffset:-300;
   }
 }
 .rotation {;
