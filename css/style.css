@@ -1,8 +1,16 @@
-#conteneur_svg {
+#conteneur_svg svg{
 	align:center;
 }
 
 svg{
 	display:block;
 	margin:auto;
+}
+
+.cercle{
+	fill:red;
+}
+
+.ellipse{
+	fill:#66ff00;
 }

@@ -6,22 +6,21 @@
 </head>
 <body>
 	<div id="conteneur_svg">
-		<svg height="250" width="250">
+		<svg height="1000" width="1000" xmlns:xlink="http://www.w3.org/1999/xlink">
 		   <defs>
-		    <linearGradient id="couleurCercle">
-        		 <stop offset="0" stop-color="red" />
-      		</linearGradient>
-      		<linearGradient id="couleurEllipse">
-      			<stop offset="0" stop-color="#66ff00" />
-      		</linearGradient>
+			   	<g id="groupeSVG">
+	 		  	 <circle cx="50%" cy="50%" r="40" class="cercle"/>
+	 		 	 <ellipse cx="50%" cy="50%" rx="70" ry="13" class="ellipse"/>
+	 		  	 <ellipse cx="50%" cy="50%" rx="13" ry="70" class="ellipse"/>
+	 		  	</g>
 		   </defs>
 
-		    <g>
- 		  	 <circle cx="50%" cy="50%" r="40" fill="url(#couleurCercle)"/>
- 		 	 <ellipse cx="50%" cy="50%" rx="70" ry="13" fill="url(#couleurEllipse)"/>
- 		  	 <ellipse cx="50%" cy="50%" rx="13" ry="70" fill="url(#couleurEllipse)"/>
- 		  	</g>
-		</svg>
+	<use x="50" y="-150" xlink:href="#groupeSVG"/>
+	<use x="50" y="50" xlink:href="#groupeSVG"/>
+	<use x="-150" y="-50" xlink:href="#groupeSVG"/>
+	<use x="250" y="-50" xlink:href="#groupeSVG"/>
+
+	</svg>
 	</div>
 </body>
 </html>
