@@ -12,12 +12,14 @@ svg{
 	stroke:#0a3984;
 	stroke-width:5px;
 	transform-origin:center;
+	animation: contour 2s linear;
 }
 
 .ellipse{
 	fill:#66ff00;
 	stroke:#0a3984;
 	stroke-width:5px;
+	stroke-dasharray:250;
 	transform-origin:center;
 }
 
@@ -27,8 +29,9 @@ svg{
   }
   to {
     transform: rotate(360deg);
+    stroke-dashoffset:250;
   }
 }
 .rotation {;
-  animation: rotation 2s linear infinite;
+  animation: rotation 3s linear infinite;
 }
